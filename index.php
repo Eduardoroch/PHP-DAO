@@ -35,10 +35,27 @@ echo json_encode($search);
 
 */
 
+
+/*
+
 $usuario = new Usuario();
-
-$usuario->login("Teste","159753");
-
+$usuario->login("root","654321");
 echo $usuario;
+
+*/
+
+
+/*
+
+$aluno = new Usuario("Aluno01", "@159%753");
+$aluno->insert();
+echo $aluno;
+
+*/
+
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->update("Professor", "kdje´~e585");
+echo "alteração realizada com sucesso";
 
  ?>
