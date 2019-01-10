@@ -53,9 +53,20 @@ echo $aluno;
 
 */
 
+
+/*
 $usuario = new Usuario();
 $usuario->loadById(8);
 $usuario->update("Professor", "kdje´~e585");
 echo "alteração realizada com sucesso";
+*/
 
- ?>
+
+
+$usuario = new Usuario();
+$usuario->loadById(14);
+$usuario->delete();
+
+echo($usuario)
+
+?>
